@@ -36,7 +36,7 @@ RUN apt-get update && \
 RUN apt-get update && apt-get install -y maven \
 vim 
 
-VOLUME  ["/DockerTest/NSampleAuth","/var/src"]
+VOLUME  ["/NSampleAuth","/var/src"]
 
 ## Prepare by downloading dependencies
 #WORKDIR /Users/vipinjoshi/Documents/workspace/NSampleAuth
