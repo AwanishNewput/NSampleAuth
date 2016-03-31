@@ -44,10 +44,10 @@ ADD ./pom.xml /var/src/pom.xml
 WORKDIR /var/src
 
 RUN ["mvn", "dependency:resolve"]  
-#RUN ["mvn", "verify"]
+RUN ["mvn", "verify"]
 
-#ADD src /var/src  
-#RUN ["mvn", "package"]
+ADD src /var/src  
+RUN ["mvn", "package"]
 
 EXPOSE 8080  
 #CMD ["/usr/lib/jvm/java-8-openjdk-amd64/bin/java", "-war", "target/NSampleAuth.war"]  
