@@ -1,3 +1,4 @@
+echo "start of requirements file"
 awscli==1.10.35
 Flask==0.10.1
 Flask-Autodoc==0.1.2
@@ -21,3 +22,4 @@ s3transfer==0.0.1
 six==1.10.0
 stevedore==1.10.0
 Werkzeug==0.11.5
+echo "end of requirements file"
